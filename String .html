@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head><title>string</title></head>
+    <body>
+        <script>
+            document.write("<br>"+Number("3.1423679"));
+            document.write("<br>"+Number(" "));
+            document.write("<br>"+Number(""));
+            document.write("<br>"+Number("57 23"));
+
+           let num = 100
+           s = String (1000);
+           document.write("<br>"+String(num))       
+           document.write("<br>"+String(100 + 2000));
+           document.write("<br>"+String(3.142367));
+           document.write("<br>"+String(num+100));
+           document.write("<br>"+String(s+100));
+           document.write("<br>"+String(s+num+100+123456789));
+           
+           let aa = 3.14
+           document.write("<br>"+aa.toString());
+           document.write("<br>"+String(aa+aa.toString()));
+
+           let numexp = 3.14
+           document.write("<br>"+numexp.toExponential(1));
+           document.write("<br>"+numexp.toExponential(2));
+           document.write("<br>"+numexp.toExponential(4));
+           document.write("<br>"+numexp.toExponential(6));
+           document.write("<br>"+numexp.toExponential(10));
+
+           let numfix = 3.14
+           document.write("<br>"+numfix.toFixed(1));
+           document.write("<br>"+numfix.toFixed(2));
+           document.write("<br>"+numfix.toFixed(4));
+           document.write("<br>"+numfix.toFixed(6));
+           document.write("<br>"+numfix.toFixed(10));
+
+           let numprec = 3.14
+           document.write("<br>"+numprec.toPrecision(1));
+           document.write("<br>"+numprec.toPrecision(2));
+           document.write("<br>"+numprec.toPrecision(4));
+           document.write("<br>"+numprec.toPrecision(6));
+           document.write("<br>"+numprec.toPrecision(10));
+
+          
+           let val = 3.14;
+           document.write("<br/>" + val.valueOf());
+           val = 30/0;
+           document.write("<br/>" + val);
+
+
+           document.write("<br/>" + Number(true));
+           document.write("<br/>" + Number(false));
+           document.write("<br/>" + Number("11"));
+           document.write("<br/>" + Number(" 11"));
+           document.write("<br/>" + Number("11 "));
+           document.write("<br/>" + Number(" 11 "));
+           document.write("<br/>" + Number("11.33"));
+           document.write("<br/>AAAA:" + Number("11,33"));
+           document.write("<br/>" + Number("11 33"));
+           document.write("<br/>" + Number("ABC"));
+           document.write("<br/>" + Number(new Date("1970-01-01")));
+        
+           
+        document.write("<br/>MIN_VALUE, MAX_VALUE, POSITIVE_INFINITY, NEGATIVE_INFINITY");
+        document.write("<br/>" + Number.POSITIVE_INFINITY);
+        document.write("<br/>" + Number.NEGATIVE_INFINITY);
+
+        
+        document.write("<br/>" + parseInt("-20"));
+        document.write("<br/>" + parseInt("-50.33"));
+        document.write("<br/>" + parseInt("70"));
+        document.write("<br/>" + parseInt("10.33"));
+        document.write("<br/>" + parseInt("40 20 30"));
+        document.write("<br/>" + parseInt("years is:100"));
+        document.write("<br/>" + parseInt("100 years"));
+
+
+
+        document.write("<br/>" + parseFloat("-20"));
+        document.write("<br/>" + parseFloat("-50.33"));
+        document.write("<br/>" + parseFloat("70"));
+        document.write("<br/>" + parseFloat("10.33"));
+        document.write("<br/>" + parseFloat("40 20 30"));
+        document.write("<br/>" + parseFloat("years is 100"));
+        document.write("<br/>" + parseFloat("100 years"));
+
+
+        document.write("<br/>" + new Date());
+        document.write("<br/>" + new Date("2004-01-01"));
+        document.write("<br/>" + new Date(2011, 11, 11, 11, 11, 11, 11));
+        document.write("<br/>" + new Date("january, 2004 12:00:00"));
+
+
+        var d = new Date();
+        document.write("<br/>" + d.toString());
+        document.write("<br/>" + d.toUTCString());
+        document.write("<br/>" + d.toDateString());
+        document.write("<br/>" + d.toISOString());
+
+
+        document.write("<br/>" + d.getTime());
+        document.write("<br/>" + d.getDate());
+        document.write("<br/>" + d.getDay());
+        document.write("<br/>" + d.getFullYear());
+        document.write("<br/>" + d.getHours());
+        document.write("<br/>" + d.getMonth());
+        document.write("<br/>" + d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear());
+        
+        
+        </script>
+    </body>
+    </html>
